@@ -37,6 +37,17 @@ mkdir multiqc
 multiqc -o multiqc fastqc
 ```
 
+
+
+До обработки:
+
+
+<img width="709" alt="initial1" src="https://user-images.githubusercontent.com/71277325/139136416-24c8aad2-cddd-469f-9d52-2e3d34cc5c4a.PNG">
+<img width="706" alt="initial2" src="https://user-images.githubusercontent.com/71277325/139136425-9ae62e23-b6f9-47f7-b28f-332e0bccb258.PNG">
+<img width="689" alt="initial3" src="https://user-images.githubusercontent.com/71277325/139136436-3fd67c64-4c4f-4a8c-a4a5-5139db3b4503.PNG">
+
+
+
 Подрезка
 ```
 platanus_trim R1_pe.fastq R2_pe.fastq 
@@ -52,6 +63,18 @@ ls trimmed/* | xargs -P 4 -tI{} fastqc -o trimmed_fastqc {}
 mkdir trimmed_multiqc
 multiqc -o trimmed_multiqc trimmed_fastqc
 ```
+
+
+
+После обработки:
+
+
+<img width="720" alt="final1" src="https://user-images.githubusercontent.com/71277325/139136460-a904c839-6ce0-44c1-88d5-186d52dee35c.PNG">
+<img width="697" alt="final2" src="https://user-images.githubusercontent.com/71277325/139136478-1d8d2dd4-f897-411d-a25f-62097cc1fd83.PNG">
+<img width="699" alt="final3" src="https://user-images.githubusercontent.com/71277325/139136492-3aa3d026-7fc1-47b1-bb7c-d6105189b0b9.PNG">
+
+
+
 Удаляем ненужное
 ```
 rm R1_mp.fastq R1_pe.fastq R2_mp.fastq R2_pe.fastq
@@ -66,13 +89,3 @@ time platanus scaffold -o Poil -c Poil_contig.fa -IP1 trimmed/R1_pe.fastq.trimme
 time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 trimmed/R1_pe.fastq.trimmed  trimmed/R2_pe.fastq.trimmed -OP2 trimmed/R1_mp.fastq.int_trimmed trimmed/R2_mp.fastq.int_trimmed 2> gapclose.log
 ```
 
-
-До обработки:
-<img width="709" alt="initial1" src="https://user-images.githubusercontent.com/71277325/139136416-24c8aad2-cddd-469f-9d52-2e3d34cc5c4a.PNG">
-<img width="706" alt="initial2" src="https://user-images.githubusercontent.com/71277325/139136425-9ae62e23-b6f9-47f7-b28f-332e0bccb258.PNG">
-<img width="689" alt="initial3" src="https://user-images.githubusercontent.com/71277325/139136436-3fd67c64-4c4f-4a8c-a4a5-5139db3b4503.PNG">
-
-После обработки:
-<img width="720" alt="final1" src="https://user-images.githubusercontent.com/71277325/139136460-a904c839-6ce0-44c1-88d5-186d52dee35c.PNG">
-<img width="697" alt="final2" src="https://user-images.githubusercontent.com/71277325/139136478-1d8d2dd4-f897-411d-a25f-62097cc1fd83.PNG">
-<img width="699" alt="final3" src="https://user-images.githubusercontent.com/71277325/139136492-3aa3d026-7fc1-47b1-bb7c-d6105189b0b9.PNG">
