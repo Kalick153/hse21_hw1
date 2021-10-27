@@ -95,4 +95,4 @@ time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 trimmed/R1_pe.fastq.tri
 
 <img width="251" alt="Снимок1" src="https://user-images.githubusercontent.com/71277325/139146888-7177fc0c-5ea8-43df-9fb4-3168a8355a4e.PNG">
 <img width="267" alt="Снимок2" src="https://user-images.githubusercontent.com/71277325/139146909-2d61949c-1bdb-4df3-a01c-7aece4b4af0e.PNG">
-<img width="281" alt="Снимок3" src="https://user-images.githubusercontent.com/71277325/139143523-83c19acf-2b9f-49d3-abfc-c19bb28627d9.PNG">
+
