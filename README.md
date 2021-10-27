@@ -1,5 +1,6 @@
 # hse21_hw1
 
+Код  такой 
 
 ln -s /usr/share/data-minor-bioinf/assembly/oil_R1.fastq
 ln -s /usr/share/data-minor-bioinf/assembly/oil_R2.fastq
