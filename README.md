@@ -89,3 +89,9 @@ time platanus scaffold -o Poil -c Poil_contig.fa -IP1 trimmed/R1_pe.fastq.trimme
 time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 trimmed/R1_pe.fastq.trimmed  trimmed/R2_pe.fastq.trimmed -OP2 trimmed/R1_mp.fastq.int_trimmed trimmed/R2_mp.fastq.int_trimmed 2> gapclose.log
 ```
 
+
+<img width="372" alt="Снимок1" src="https://user-images.githubusercontent.com/71277325/139143524-95e7be8c-990f-43df-ad2b-8835518c0558.PNG">
+<img width="372" alt="Снимок2" src="https://user-images.githubusercontent.com/71277325/139143519-bac1a6e9-4e76-4264-b35c-b5d994b4aa92.PNG">
+<img width="281" alt="Снимок3" src="https://user-images.githubusercontent.com/71277325/139143523-83c19acf-2b9f-49d3-abfc-c19bb28627d9.PNG">
+
+
