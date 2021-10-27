@@ -2,6 +2,7 @@
 
 Код  такой 
 
+```
 ln -s /usr/share/data-minor-bioinf/assembly/oil_R1.fastq
 ln -s /usr/share/data-minor-bioinf/assembly/oil_R2.fastq
 ln -s /usr/share/data-minor-bioinf/assembly/oilMP_S4_L001_R1_001.fastq
@@ -29,3 +30,4 @@ mkdir trimmed_fastqc
 ls trimmed/* | xargs -P 4 -tI{} fastqc -o trimmed_fastqc {}
 mkdir trimmed_multiqc
 multiqc -o trimmed_multiqc trimmed_fastqc
+```
